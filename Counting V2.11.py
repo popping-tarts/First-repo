@@ -31,7 +31,7 @@ def restart():
              time.sleep(3)
              exit()
          else:
-             print("Invalid response!")
+             print("Invalid response.")
              continue
 restart()
            
