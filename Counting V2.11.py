@@ -6,19 +6,20 @@ while True:
      try:
          print("What number would you like to count up to?")
          max_count = int(input())
+         max_count = (max_count + 1)
      except ValueError:
          print ("Must be a number.\n Try again.")
          time.sleep(1)
          continue
      if isinstance(max_count,int):
         break
-count =int(0)
 print ("Let's go!")
-while (max_count > count):
-    count+=1
-    time.sleep(1)
+count = 0
+for count in range(count,max_count):
     print(count)
-print("Done!")
+    time.sleep(1)
+if count == max_count:
+    print("Done!")
 
 def restart():
      while True:
