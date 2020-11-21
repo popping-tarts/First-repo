@@ -24,14 +24,14 @@ def restart():
      while True:
          re =(input("Restart? y for 'Yes', and n for 'No\' "))
          re = re.lower()
-         if (re == str("yes"):
-             os.execv(sys.executable, [sys.executable, '"' + sys.argv[0] + '"'] + sys.argv[1:])
+         if re == "y": 
+          os.execv(sys.executable, [sys.executable, '"' + sys.argv[0] + '"'] + sys.argv[1:])
          elif (re == "n"):
              print("Okay then. \n That's the end,folks!")
              time.sleep(3)
              exit()
          else:
-             print("Invalid response!")
+             print("Invalid response.")
              continue
 restart()
            
